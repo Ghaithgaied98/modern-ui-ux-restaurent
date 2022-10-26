@@ -42,7 +42,7 @@ const Navbar = () => {
 
       <div className="app__navbar-smallscreen">
         <GiHamburgerMenu
-          style={{cursor: "pointer"}}
+          style={{ cursor: "pointer" }}
           color="#fff"
           fontSize={27}
           onClick={() => {
@@ -61,19 +61,34 @@ const Navbar = () => {
             />
 
             <ul className="app__navbar-smallscreen-links">
-              <li className="p__opensans">
+              <li
+                className="p__opensans"
+                onClick={() => setToggleMenu((old) => !old)}
+              >
                 <a href="#home">Home</a>
               </li>
-              <li className="p__opensans">
+              <li
+                className="p__opensans"
+                onClick={() => setToggleMenu((old) => !old)}
+              >
                 <a href="#about">About</a>
               </li>
-              <li className="p__opensans">
+              <li
+                className="p__opensans"
+                onClick={() => setToggleMenu((old) => !old)}
+              >
                 <a href="#menu">Menu</a>
               </li>
-              <li className="p__opensans">
+              <li
+                className="p__opensans"
+                onClick={() => setToggleMenu((old) => !old)}
+              >
                 <a href="#awards">Awards</a>
               </li>
-              <li className="p__opensans">
+              <li
+                className="p__opensans"
+                onClick={() => setToggleMenu((old) => !old)}
+              >
                 <a href="#contact">Contact</a>
               </li>
             </ul>
